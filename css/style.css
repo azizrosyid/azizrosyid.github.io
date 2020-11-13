@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600&display=swap');
+body{
+  font-family: 'Saira', sans-serif;
+
+}
+
+nav {
+  background-color: #3562a6;
+}
+.nav-wrapper img {
+  height: 100%;
+}
+
+.group td {
+  text-align: center;
+  width: 30px;
+}
+
+.group td:nth-child(2) {
+  text-align: left;
+  width: 400px;
+}
+
+.group span{
+  color: black;
+}
+
+.group td:nth-child(2) span:hover{
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.group-title {
+  font-size: 20px;
+}
+
+.team-logo {
+  width: 40px;
+  vertical-align: middle;
+}
+
+thead {
+  background-color: #091442;
+  color: white;
+}
+.card .card-image img {
+  margin: 0 auto;
+  width: auto;
+  height: 100%;
+  max-height: 200px;
+}
+
+.card-content p {
+  font-size: 17px;
+  color: black;
+}
+
+.card:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.card-content p:first-child {
+  font-weight: 600;
+}
+.team-title{
+  position: relative;
+}
+
+.team-title h1 {
+  font-size: xx-large;
+  display: inline-block;
+  margin: 0;
+}
+
+.team-title .btn-favorite {
+  font-size: 40px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.team-title .tooltip{
+  width: 200px;
+  background-color: rgb(77, 77, 77);
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  transition: opacity 0.3s ease-out;  
+}
+
+.team-title:hover .tooltip{
+  opacity: 0.5;
+}
+
+.team-info td {
+  font-weight: 400;
+  font-size: large;
+}
+.team-info td:first-child {
+  font-weight: 500;
+  font-size: larger;
+}
+
+.team-info img {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+}
+
+.favorite-card {
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.favorite-card img {
+  width: 100%;
+  max-width: 100px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.favorite-card .favorite-content {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+}
+.favorite-content p {
+  font-size: large;
+  font-weight: 500;
+  margin: 0 10px;
+  color: black;
+}
+
+.favorite-content p:first-child {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.favorite-card:hover p{
+  text-decoration: underline;
+}
+
+#root h3 {
+  text-align: center;
+}
+
+.loading-image{
+  width: 75%;
+  margin: 0 auto;
+  display: block;
+}
+
+@media only screen and (max-width: 500px) {
+  .team-logo {
+    width: 60px;
+  }
+  .group span {
+    display: none;
+  }
+}

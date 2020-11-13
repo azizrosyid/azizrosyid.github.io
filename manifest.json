@@ -1,0 +1,24 @@
+{
+  "name": "Uefa Champions League Website",
+  "short_name": "UCL Website",
+  "description": "Aplikasi untuk melihat liga Champions dalam website berbasis PWA",
+  "gcm_sender_id": "290871267254",
+  "theme_color": "#0E1E5B",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "assets/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
