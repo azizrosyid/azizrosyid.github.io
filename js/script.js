@@ -117,6 +117,7 @@ function getDetailTeam(id) {
       const teamTitle = `
       <div class="team-title">
         <h1>${shortName}</h1>
+        <!-- button untuk menambahkan dan menghapus tim favorit  -->
         <span class="btn-favorite">&#9734;</span>
         <span class="tooltip">Add To Favorite</span>
         <hr /> 
