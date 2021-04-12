@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.wrap-navbar {
+  display: block;
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.btn-toggle-menu {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-image: url("assets/icon/Hamburger_icon_white.svg");
+  background-size: cover;
+  outline: none;
+}
+
+.bg-close {
+  background-image: url("assets/icon/Close_icon_white.svg");
+  background-size: cover;
+}
+
+.display-on {
+  display: block !important;
+}
+
+.menu-navbar {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  display: none;
+}
+
+.menu-navbar li a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  text-decoration: none;
+  /* color: white; */
+  color: black;
+}
+
+.menu-navbar li {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.menu-navbar li a:hover {
+  background-color: forestgreen;
+  color: white;
+  /* background-color: white; */
+  /* color: black; */
+}
+
+main {
+  margin-top: 60px;
+}
+
+.introduction {
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-person {
+  padding-top: 30px;
+}
+
+.img-person img {
+  height: 150vw;
+}
+
+.info-person {
+  position: absolute;
+  top: 60%;
+  display: flex;
+  color: white;
+  width: 100%;
+}
+
+.bg-overlay {
+  width: 500px;
+  height: 500px;
+}
+
+.black-overlay {
+  background: rgba(0, 0, 0, 0.75);
+  transform: rotate(-102.12deg);
+  width: 205vw;
+  position: absolute;
+  height: 200vw;
+}
+
+.greeting {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.name-person span {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.name-person span:nth-child(2) {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.title-person {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+.detail-person {
+  flex-grow: 3;
+  z-index: 1;
+  padding-top: 20vw;
+  padding-left: 10vw;
+}
+
+.social-media-person {
+  flex-grow: 1;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.wrap-icon {
+  width: 100%;
+  text-align: center;
+}
+
+.container-section {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.container-title {
+  width: 100%;
+  text-align: center;
+}
+
+h2[class^="title"] {
+  border: 6px solid #000000;
+  padding: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-about {
+  margin: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.text-about p {
+  margin-bottom: 5px;
+}
+
+.item-skill {
+  margin-top: 20px;
+}
+
+.title-item-skill {
+  width: 100%;
+  position: relative;
+  height: 50px;
+}
+
+.title-item-skill img {
+  height: 40px;
+  position: absolute;
+  opacity: 0.2;
+}
+
+.title-item-skill h3 {
+  line-height: 50px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.item-skill p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tools > p {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container-tools {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-tool {
+  flex: 50%;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.item-tool img {
+  height: 100%;
+  max-height: 50px;
+}
