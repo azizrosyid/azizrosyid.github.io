@@ -5,6 +5,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+body {
+  background-color: #e8e8e8;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -19,6 +23,11 @@ nav {
   width: 100%;
   background-color: black;
   position: relative;
+}
+
+.bg-grey {
+  background-color: #495464;
+  transition: background-color 200ms linear;
 }
 
 .btn-toggle-menu {
@@ -104,7 +113,8 @@ main {
 }
 
 .black-overlay {
-  background: rgba(0, 0, 0, 0.75);
+  background: #495464;
+  opacity: 0.75;
   transform: rotate(-102.12deg);
   width: 205vw;
   position: absolute;
@@ -226,16 +236,126 @@ h2[class^="title"] {
 .container-tools {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .item-tool {
   flex: 50%;
   box-sizing: border-box;
-  padding: 10px 10px;
   text-align: center;
+  padding: 10px 10px;
 }
 
 .item-tool img {
-  height: 100%;
-  max-height: 50px;
+  max-height: 100%;
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+
+.title-tool {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.container-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.item-portfolio {
+  flex: 100%;
+  margin-bottom: 20px;
+}
+
+.item-portfolio img {
+  width: 100%;
+  border: 4px solid black;
+  max-height: 150px;
+  object-fit: cover;
+  object-position: top;
+  box-sizing: border-box;
+}
+
+.contactme > .container-title p {
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form .input-form {
+  display: flex;
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.contact-form .input-form label {
+  flex: 40%;
+}
+
+.input-box {
+  flex: 60%;
+  background-color: #e8e8e8;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.input-form label {
+  line-height: 40px;
+}
+
+.input-form input {
+  height: 40px;
+}
+
+.input-box:focus {
+  outline: none;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #495464;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+}
+
+footer{
+  background-color: #495464;
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.container-social-media{
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.item-social-media{
+  width: 40px;
+  height: 40px;
+}
+
+.item-social-media img{
+  width: 100%;
+}
+
+.copyright {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.copyright p{
+  color: white;
 }
