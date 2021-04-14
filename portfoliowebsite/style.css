@@ -5,8 +5,12 @@
   font-family: "Raleway", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #e8e8e8;
+  background-color: #f4f4f2;
 }
 
 nav {
@@ -26,7 +30,7 @@ nav {
 }
 
 .bg-grey {
-  background-color: #495464;
+  background-color: #495464 !important;
   transition: background-color 200ms linear;
 }
 
@@ -56,6 +60,24 @@ nav {
   width: 100%;
   position: absolute;
   top: 60px;
+}
+
+.logo-navbar{
+  position: fixed;
+  top: 10px;
+  left: 20px;
+}
+
+.logo-navbar img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin: auto 0;
+}
+
+.menu-navbar ul {
+  background-color: #495464;
+  opacity: 0.8;
   display: none;
 }
 
@@ -64,8 +86,9 @@ nav {
   vertical-align: middle;
   width: 100%;
   text-decoration: none;
-  /* color: white; */
-  color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .menu-navbar li {
@@ -75,10 +98,8 @@ nav {
 }
 
 .menu-navbar li a:hover {
-  background-color: forestgreen;
-  color: white;
-  /* background-color: white; */
-  /* color: black; */
+  background-color: white;
+  color: black;
 }
 
 main {
@@ -240,7 +261,7 @@ h2[class^="title"] {
 }
 
 .item-tool {
-  flex: 50%;
+  width: 50%;
   box-sizing: border-box;
   text-align: center;
   padding: 10px 10px;
@@ -278,6 +299,16 @@ h2[class^="title"] {
   box-sizing: border-box;
 }
 
+.title-item-portfolio{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.text-portfolio{
+  font-size: 17px;
+  font-weight: 500;
+}
+
 .contactme > .container-title p {
   margin-top: 20px;
   font-size: 17px;
@@ -295,11 +326,11 @@ h2[class^="title"] {
 }
 
 .contact-form .input-form label {
-  flex: 40%;
+  flex: 30%;
 }
 
 .input-box {
-  flex: 60%;
+  flex: 70%;
   background-color: #e8e8e8;
   border: none;
   border-bottom: 2px solid black;
@@ -324,16 +355,25 @@ h2[class^="title"] {
   color: white;
   font-weight: 600;
   height: 40px;
+  cursor: pointer;
 }
 
-footer{
+.status-form{
+  font-size: 25px;
+  font-weight: 700;
+  margin: 40px 0;
+  text-align: center;
+  display: none;
+}
+
+footer {
   background-color: #495464;
   display: inline-block;
   width: 100%;
   margin-top: 50px;
 }
 
-.container-social-media{
+.container-social-media {
   display: flex;
   width: 70%;
   margin: 0 auto;
@@ -341,12 +381,12 @@ footer{
   margin-top: 50px;
 }
 
-.item-social-media{
+.item-social-media {
   width: 40px;
   height: 40px;
 }
 
-.item-social-media img{
+.item-social-media img {
   width: 100%;
 }
 
@@ -356,6 +396,141 @@ footer{
   text-align: center;
 }
 
-.copyright p{
+.copyright p {
   color: white;
+}
+
+@media (min-width: 1024px) {
+  main {
+    margin: 0;
+  }
+  .wrap-navbar {
+    background-color: transparent;
+  }
+  .img-person img {
+    height: 35vw;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .img-person {
+    padding: 0;
+  }
+
+  .black-overlay {
+    background-color: #e8e8e8;
+    opacity: 1;
+    transform: rotate(10deg);
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    top: -20vw;
+    left: -20vw;
+  }
+  .introduction {
+    height: 40vw;
+  }
+  .social-media-person {
+    flex-direction: row;
+    width: 20%;
+    box-sizing: border-box;
+  }
+  .detail-person {
+    padding: 0;
+    top: 0;
+    color: black;
+    width: 40%;
+  }
+  .info-person {
+    flex-direction: column;
+    top: 20%;
+    left: 10%;
+  }
+  .btn-toggle-menu {
+    display: none;
+  }
+  .menu-navbar {
+    position: static;
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .menu-navbar ul {
+    display: flex;
+    background-color: transparent;
+    opacity: 1;
+    margin-left: auto;
+  }
+  .menu-navbar li {
+    display: flex;
+    align-items: center;
+  }
+  .menu-navbar li a {
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border-radius: 7px;
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .menu-navbar li a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .greeting {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .name-person span {
+    display: inline;
+    font-size: 30px !important;
+  }
+
+  .title-person {
+    font-size: 17px;
+  }
+
+  .social-media-person {
+    width: 200px;
+    border-radius: 10px;
+    background-color: #bbbfca;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .item-tool {
+    width: 25%;
+  }
+  .contact-form {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .item-portfolio {
+    width: 30%;
+    flex: none;
+  }
+  .item-portfolio img {
+    max-height: 200px;
+  }
+  .item-portfolio:nth-child(3n + 2) {
+    margin: 0 20px;
+  }
+  .container-social-media {
+    width: 30%;
+  }
+
+  .logo-navbar{
+    margin: auto 0;
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+    position: static;
+  }
 }

@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <title>WebProfile</title>
+  <title>Aziz Rosyid</title>
+  <link rel="shortcut icon" href="assets/icon/icon.svg" type="image/x-icon" />
 </head>
 
 <body>
@@ -14,11 +15,15 @@
     <div class="wrap-navbar">
       <button class="btn-toggle-menu"></button>
       <div class="menu-navbar">
+        <div class="logo-navbar">
+          <img src="assets/icon/icon.svg" alt="" />
+        </div>
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Portofolio</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a data-target=".about" href="#">About Me</a></li>
+          <li><a data-target=".skills" href="#">Skills</a></li>
+          <li><a data-target=".tools" href="#">Tools & Languages</a></li>
+          <li><a data-target=".portfolio" href="#">Portfolio</a></li>
+          <li><a data-target=".contactme" href="#">Contact Me</a></li>
         </ul>
       </div>
     </div>
@@ -40,13 +45,14 @@
           <span class="title-person">Full Stack Web Developer</span>
         </div>
         <div class="social-media-person">
-          <a href="#" class="wrap-icon">
+          <a href="mailto: azizrosyid783@gmail.com" class="wrap-icon">
             <img src="assets/icon/email icon.png" width="30px" alt="" />
           </a>
-          <a href="#" class="wrap-icon">
+          <a href="https://github.com/azizrosyid" class="wrap-icon" target="_blank">
             <img src="assets/icon/github icon.png" width="30px" alt="" />
           </a>
-          <a href="#" class="wrap-icon">
+          <a href="https://www.linkedin.com/in/muhammad-aziz-rosyid-hidayat-72ba1a1bb/" class="wrap-icon"
+            target="_blank">
             <img src="assets/icon/linkedin icon.png" width="30px" alt="" />
           </a>
         </div>
@@ -63,12 +69,11 @@
           Development "Veteran" Yogyakarta.
         </p>
         <p>
-          I am obsessed with making things
-          that can be of use to others and I am also a perfectionist when
-          making somethings. I have been learning for web development for a
-          year, besides that I have also learned several programming
-          languages, such as python, php, c ++. Now I'm interested in learning
-          about data and machine learning.
+          I am obsessed with making things that can be of use to others and I
+          am also a perfectionist when making somethings. I have been learning
+          for web development for a year, besides that I have also learned
+          several programming languages, such as python, php, c ++. Now I'm
+          interested in learning about data and machine learning.
         </p>
       </div>
     </div>
@@ -96,8 +101,8 @@
           </div>
           <p>
             I can design, and build database for website, and can create rest
-            api with php, or javascript. I also can work with version control
-            like git.
+            api with php, or NodeJs. I also can work with version control like
+            git.
           </p>
         </div>
       </div>
@@ -171,29 +176,88 @@
     </div>
     <div class="portfolio container-section">
       <div class="container-title">
-        <h2 class="title-portflio">Portofolio</h2>
+        <h2 class="title-portflio">Portfolio</h2>
       </div>
       <div class="container-portfolio">
         <div class="item-portfolio">
-          <img src="assets/image/google.png" alt="">
-          <h3 class="title-item-portfolio">google</h3>
-          <p class="text-portfolio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia cumque in, inventore
-            libero quae perferendis recusandae dolores ducimus, doloribus asperiores laboriosam saepe facilis natus, nam
-            omnis officiis at vero dolorem.</p>
+          <img src="assets/image/movie discover.png" alt="" />
+          <h3 class="title-item-portfolio">Movie Discover</h3>
+          <p class="text-portfolio">
+            Find information about movies that are currently showing, or will
+            be showing and also popular films at this time. View the
+            <a href="https://github.com/azizrosyid/movie-discover" target="_blank">source code</a>
+            or check out the <a href="https://azizrosyid.github.io/moviediscover/" target="_blank">demo</a>!
+          </p>
         </div>
         <div class="item-portfolio">
-          <img src="assets/image/stackoverflow.png" alt="">
-          <h3 class="title-item-portfolio">stackoverflow</h3>
-          <p class="text-portfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint itaque ea neque,
-            consequatur eum blanditiis soluta eaque beatae explicabo ipsam minus dolore similique magni sed omnis
-            corrupti fugiat suscipit!</p>
+          <img src="assets/image/ucl 2020.png" alt="" />
+          <h3 class="title-item-portfolio">UEFA Champions League 2020/21</h3>
+          <p class="text-portfolio">
+            View the UEFA Champions League standings and search for
+            information on participating teams. View the
+            <a href="https://github.com/azizrosyid/azizrosyid.github.io/tree/master/ucl2020" target="_blank">source
+              code</a>
+            or check out the
+            <a href="https://azizrosyid.github.io/ucl2020/" target="_blank">demo</a>!
+          </p>
+        </div>
+        <div class="item-portfolio">
+          <img src="assets/image/landing page.png" alt="" />
+          <h3 class="title-item-portfolio">Landing Page</h3>
+          <p class="text-portfolio">
+            Landing page design from Figma Community. View the
+            <a href="https://github.com/azizrosyid/azizrosyid.github.io/tree/master/landingpage" target="_blank">source
+              code</a>
+            or check out the <a href="https://azizrosyid.github.io/landingpage/" target="_blank">demo</a>!
+          </p>
+        </div>
+        <div class="item-portfolio">
+          <img src="assets/image/surveyform.png" alt="" />
+          <h3 class="title-item-portfolio">Survey Form</h3>
+          <p class="text-portfolio">
+            freeCodeCamp survey form. View the
+            <a href="https://github.com/azizrosyid/azizrosyid.github.io/tree/master/surveyform" target="_blank">source
+              code</a>
+            or check out the
+            <a href="https://azizrosyid.github.io/surveyform/" target="_blank">demo</a>!
+          </p>
+        </div>
+        <div class="item-portfolio">
+          <img src="assets/image/tributepage.png" alt="" />
+          <h3 class="title-item-portfolio">Tribute Page</h3>
+          <p class="text-portfolio">
+            Tribute page for Tjipto Mangoenkoesoemo. View the
+            <a href="https://github.com/azizrosyid/azizrosyid.github.io/tree/master/tributepage" target="_blank">source
+              code</a>
+            or check out the <a href="https://azizrosyid.github.io/tributepage/" target="_blank">demo</a>!
+          </p>
+        </div>
+        <div class="item-portfolio">
+          <img src="assets/image/belajar membaca.png" alt="" />
+          <h3 class="title-item-portfolio">Belajar Membaca</h3>
+          <p class="text-portfolio">
+            Help your child to learn to read. View the
+            <a href="https://github.com/azizrosyid/azizrosyid.github.io/tree/master/belajarmembaca"
+              target="_blank">source code</a>
+            or check out the <a href="https://azizrosyid.github.io/belajarmembaca/" target="_blank">demo</a>!
+          </p>
+        </div>
+        <div class="item-portfolio">
+          <img src="assets/image/codewars.png" alt="" />
+          <h3 class="title-item-portfolio">Codewars</h3>
+          <p class="text-portfolio">
+            My answer at solving programming problems in codewars. View the
+            <a href="https://github.com/azizrosyid/codewars" target="_blank">source code</a>.
+          </p>
         </div>
       </div>
     </div>
     <div class="contactme container-section">
       <div class="container-title">
         <h2 class="title-contactme">Contact Me</h2>
-        <p>If you have any question, feel free to ask me with contact form.</p>
+        <p>
+          If you have any question, feel free to ask me with contact form.
+        </p>
       </div>
       <form class="contact-form" action="https://formspree.io/f/xgerekjq" method="POST">
         <div class="input-form">
@@ -206,28 +270,38 @@
         </div>
         <div class="input-form">
           <label>Message : </label>
-          <textarea required class="input-box" name="message" cols="30" rows="3"
-            placeholder="Your message..."></textarea>
+          <textarea required class="input-box" name="message" rows="3" placeholder="Your message..."></textarea>
         </div>
         <button class="btn-submit">Submit</button>
       </form>
+      <div class="status-form"></div>
     </div>
     <footer>
       <div class="container-social-media">
         <div class="item-social-media">
-          <img src="assets/icon/facebook logo.png" alt="">
+          <a href="https://www.facebook.com/aziz.rosyid123/" target="_blank">
+            <img src="assets/icon/facebook logo.png" alt="" />
+          </a>
         </div>
         <div class="item-social-media">
-          <img src="assets/icon/instagram-4-512.png" alt="">
+          <a href="https://www.instagram.com/azizrosyidd/" target="_blank">
+            <img src="assets/icon/instagram-4-512.png" alt="" />
+          </a>
         </div>
         <div class="item-social-media">
-          <img src="assets/icon/linkedin icon.png" alt="">
+          <a href="https://www.linkedin.com/in/muhammad-aziz-rosyid-hidayat-72ba1a1bb/" target="_blank">
+            <img src="assets/icon/linkedin icon.png" alt="" />
+          </a>
         </div>
         <div class="item-social-media">
-          <img src="assets/icon/github icon.png" alt="">
+          <a href="https://github.com/azizrosyid" target="_blank">
+            <img src="assets/icon/github icon.png" alt="" />
+          </a>
         </div>
         <div class="item-social-media">
-          <img src="assets/icon/email icon.png" alt="">
+          <a href="mailto: azizrosyid783@gmail.com" target="_blank">
+            <img src="assets/icon/email icon.png" alt="" />
+          </a>
         </div>
       </div>
       <div class="copyright">
