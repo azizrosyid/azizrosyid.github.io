@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  color:#333;
+}
+main {
+  display: grid;
+  width: 97.5%;
+  margin: 2.5% auto;
+  grid-template: 2fr/1fr;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 2.5%;
+}
+#image {
+  width: 100px;
+}
+
+.title-div {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#img-div {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  padding: 2.5%;
+}
+
+#image {
+    display: block;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+#tribute-info h2{
+    text-align: center;
+}
+
+#tribute-info{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.tribute-source{
+    width: 85%;
+    margin: 0 auto;
+}

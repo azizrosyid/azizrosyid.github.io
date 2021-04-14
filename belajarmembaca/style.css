@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+html { 
+    background: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-simple-kid-grass-play-background-image_223050.jpg") no-repeat center center fixed; 
+    background-size: cover;
+}
+
+body{
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+.container-vokal{
+    text-align: center;
+}
+.huruf-vokal-menu {
+    font-size: 70px;
+    display: inline-block;
+    width: 15%;
+    margin: 0 7px;
+}
+
+.container-konsonan{
+    margin-top: 30px;
+}
+.div-huruf{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.div-huruf span{
+    font-size: 50px;
+}
+
+.countdown{
+    text-align: center;
+}
+
+.countdown span{
+    font-size: 20px;
+    display: inline-block;
+}
