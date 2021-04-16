@@ -53,7 +53,8 @@ nav {
 }
 
 .display-on {
-  display: block !important;
+  top: 0 !important;
+  transition: top 1s;
 }
 
 .menu-navbar {
@@ -78,7 +79,10 @@ nav {
 .menu-navbar ul {
   background-color: #495464;
   opacity: 0.8;
-  display: none;
+  position: absolute;
+  width: 100%;
+  top: -400px;
+  transition: top .5s;
 }
 
 .menu-navbar li a {
@@ -280,6 +284,7 @@ h2[class^="title"] {
 
 .container-portfolio {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
   margin: 20px 0;
@@ -458,9 +463,11 @@ footer {
   }
   .menu-navbar ul {
     display: flex;
+    justify-content: flex-end;
     background-color: transparent;
     opacity: 1;
     margin-left: auto;
+    position: static;
   }
   .menu-navbar li {
     display: flex;
@@ -508,7 +515,7 @@ footer {
     width: 25%;
   }
   .contact-form {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
   }
 
@@ -517,7 +524,7 @@ footer {
     flex: none;
   }
   .item-portfolio img {
-    max-height: 200px;
+    max-height: 300px;
   }
   .item-portfolio:nth-child(3n + 2) {
     margin: 0 20px;

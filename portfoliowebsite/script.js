@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         divStatus.style.display = "block";
         divStatus.innerText = status.failed;
         setTimeout(() => {
-        divStatus.style.display = "none";
+          divStatus.style.display = "none";
         }, 3000);
       });
   });
